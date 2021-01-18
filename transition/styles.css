@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#saludo{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    position: relative;
+    animation-name: cuadrado;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes cuadrado {
+    0%{background: black; top:0px ; left: 0px;}
+    15%{background:pink; top:-150px; left:0px;}
+    25%{background:green;top:-150px; left: 150px;}
+    50%{background: red; top:150px; left:150px;}
+    75%{background:blue; top:150px; left:-150px}
+    90%{background:purple; top:-150px; left:-150px}
+    95%{background: gray; top:-150px; left:0px}
+    100%{background:yellow; top:0px; left:0px;}
+    
+}
+
